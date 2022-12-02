@@ -98,10 +98,11 @@ Main {
 
     public static void task7() {
         short allWeight = 7;
+        int grPerKg = 1000;
         short lossGr = 250;
-        float lossKg = lossGr / 1000f;
+        float lossKg = lossGr / (float)grPerKg;
         short lossGr2 = 500;
-        float lossKg2 = lossGr2 / 1000f;
+        float lossKg2 = lossGr2 / (float)grPerKg;
         float allDay = allWeight / lossKg;
         float allDay2 = allWeight / lossKg2;
         float mean = (allDay + allDay2) / 2;
